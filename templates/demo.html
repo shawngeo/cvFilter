@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <title>Demo</title>
+    <link rel = "stylesheet" type="text/css" href={{url_for('static', filename='style.css')}}>
+</head>
+<body>
+<div class = 'header'>
+    <h1>RESUME FILTER</h1>
+</div>
+
+<div class="d1">
+    <form autocomplete="off" method="POST">
+        <p>Years of Experience:
+        <input class="c1" name = "y">
+        </p>
+        <p>
+        <label for="area-names">Chose area: </label>
+        <select name="area-names" id="area-names">
+            <option value="">Any</option>
+            <option value="Site">Site</option>
+            <option value="Design">Design</option>
+        </select>
+        </p>
+        <p>
+        <label for="Project-name">Chose project type: </label>
+        <select name="Project-name" id="Project-name">
+            <option value="">Any</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="Commercial">Commercial</option>
+            <option value="Residential">Residential</option>
+        </select>
+        </p>
+        <p>
+        <label for="Branch-name">Chose branch: </label>
+        <select name="Branch-name" id="Branch-name">
+            <option value="">Any</option>
+            <option value="Civil">Civil</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Architect">Architect</option>
+        </select>
+        </p>
+        <p>
+        <label for="Skills-name">Chose Technical Background: </label>
+        <select name="Skills-name" id="Skills-name">
+            <option value="">Any</option>
+            <option value="AutoCAD">AutoCAD</option>
+            <option value="Revit">Revit</option>
+        </select>
+        </p>
+            <button type = "submit">
+                <span>
+                    Submit
+                </span>
+                <div class="ripple"></div>
+            </button>
+    </form>
+</div>
+</body>
